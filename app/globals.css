@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (width <= 400px) { 
-  body {
-    width: 250px;
-  }
+/* @media (width <= 400px) { 
+  hover: none;
 }
- 
+@media (width >= 400px) { 
+  hover: true;
+}
+  */
 
 :root {
   --background: slate-950;

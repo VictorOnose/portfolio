@@ -4,6 +4,9 @@ module.exports = {
 		"./app/**/*.{js,ts,jsx,tsx}",
 		"./components/**/*.{js,ts,jsx,tsx}"
 	],
+	future: {
+		hoverOnlyWhenSupported: true, // 👈 enable hover only when supported
+	},
 	theme: {
 		screens: {
 			theme: {
