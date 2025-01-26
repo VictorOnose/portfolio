@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link"
 import Projects from "@/components/Projects";
 import './globals.css';
+import RootLayout from "@/app/layout";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 export default function Home() {
 
@@ -21,28 +28,120 @@ export default function Home() {
           </main>
 
 
-          <div className="pt-15">
-            <Button className="transition transform hover:scale-105 hover:shadow-2xl social bg-transparent w-35 h-35" variant="outline">
-              <Link href='https://www.linkedin.com/in/victor-onose-051b0a2a9/'>
-                <Image
-                  src="/images/linkedin2.png"
-                  alt="github"
-                  width={45} height={45}
-                  className="rounded" /></Link>
-            </Button>
-            <Button className="transition transform hover:scale-105 hover:shadow-2xl social bg-transparent w-35 h-35" variant="outline">
-              <Link href='https://github.com/VictorOnose'> <Image src="/images/github.png" objectFit="contain" className="bg-transparent" width={45} height={45} alt="github" /></Link>
-            </Button>
+          <div className="bigdiv pt-15">
+            <div className="pt-5 socialtech">
+              <div className="items-left">
+                Socials
+              </div>
+              <hr className="w-full border-gray-400" />
+              <div className="pt-2 flex space-x-4">
+
+                <Button className="transition transform hover:scale-105 hover:shadow-2xl social bg-transparent" variant="outline">
+                  <Link href='https://www.linkedin.com/in/victor-onose-051b0a2a9/'>
+                    <Image
+                      src="/images/linkedin2.png"
+                      alt="github"
+                      width={70}
+                      height={70}
+                      className="rounded" /></Link>
+                </Button>
+                <Button className="transition transform hover:scale-105 hover:shadow-2xl social bg-transparent" variant="outline">
+                  <Link href='https://github.com/VictorOnose'>
+                    <Image
+                      src="/images/github.png"
+                      objectFit="contain"
+                      className="bg-transparent"
+                      width={70} height={70}
+                      alt="github" /></Link>
+                </Button>
+                <div className="w-px ml-1 h-18 bg-gray-400 "></div>
+              </div>
+            </div>
+            <div className="pt-5 socialtech">
+              <div className="items-left">
+                TechStack
+              </div>
+              <hr className="w-full border-gray-400" />
+              <div className="pt-3 flex space-x-4">
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <img
+                        src="/images/next.png"
+                        alt="next"
+                        className="techstack" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>NEXT.JS</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <img
+                        src="/images/css.png"
+                        alt="css"
+                        className="techstack" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>CSS</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <img
+                        src="/images/html.png"
+                        alt="html"
+                        className="techstack" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>HTML</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <img
+                        src="/images/react.png"
+                        alt="react"
+                        className="techstack" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>React</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <img
+                        src="/images/cplus.png"
+                        alt="cplus"
+                        className="cplus" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>C++</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
+            </div>
+
 
           </div>
           <Projects />
-        </div >
-      </div >
-      <footer className="bg-gray-800 text-gray-400 text-center py-4 mt-6">
-        <p>© 2025 Onose Victor. All rights reserved.</p>
-      </footer>
+
+        </div>
+      </div>
     </body>
 
 
+
   );
+
 }

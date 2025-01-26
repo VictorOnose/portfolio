@@ -9,7 +9,21 @@
   hover: true;
 }
   */
+.items-left{
+  float: left;
+}
 
+.items-right{
+  float: right;
+}
+.bigdiv{
+  display: flex;
+  flex-direction: row;
+}
+.socialtech{
+  display:flex;
+  flex-direction:column;
+}
 :root {
   --background: slate-950;
   --foreground: slate-950;
@@ -17,6 +31,21 @@
 * {
   border-width: 0px;
 }
+Image {
+  width: 100%;
+}
+
+.techstack{
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+.cplus{
+  margin-left: 10px;
+  width: 45px;
+  height: 50px;
+}
+
 .pt-15{
   margin: 15px 0px;
 }
@@ -89,6 +118,8 @@
 .social {
   padding: 0.5px;
   margin: 5px;
+  width: 50px;
+  height: 50px;
 }
 
 .vline {
