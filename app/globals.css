@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ 
+
+:root {
+  --background: slate-950;
+  --foreground: slate-950;
+}
+* {
+  border-width: 0px;
+}
+.pt-15{
+  margin: 15px 0px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: bg-slate-800;
+    --foreground: bg-slate-800;
+  }
+}
+.flex-1{
+  flex:1;
+}
+.name {
+  margin: auto;
+  color: bg-zinc-950;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  //padding: 50px;
+  border-radius: 5px;
+  height: 310px;
+  width: 500px;
+  text-align: center;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+
+}
+
+.projects-container {
+  border: 1px solid #ccc;
+  box-shadow: 1 8px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.title strong {
+  font-size: medium;
+  border-bottom: 2px solid black;
+}
+
+.description {
+  padding-top: 10px;
+}
+
+.links {
+  display: flex;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.social {
+  padding: 0.5px;
+  margin: 5px;
+}
+
+.vline {
+  border-left: thick solid #ff0000;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+@layer base {
+  
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gray-900;
+  }
+}

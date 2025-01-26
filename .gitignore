@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# Build files
+.next/
+dist/
+
+# Logs and debug files
+*.log
+*.env.local
+*.env
