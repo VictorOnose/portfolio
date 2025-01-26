@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <body className="font-sans align-center">
-      <div className="pt-5 text-gray-300 bg-gray-900 min-h-screen">
+      <div className="pt-5 text-gray-300 bg-gray-900 min-h-screen ">
         <div className="name">
           <h1 className="text-4xl font-bold text-center">Onose Victor</h1>
           <h2 className="text-lg text-center mt-2">Web Developer | Second-year student</h2>

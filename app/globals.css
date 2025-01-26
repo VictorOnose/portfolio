@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@media (width <= 400px) { 
+  body {
+    width: 250px;
+  }
+}
  
 
 :root {
@@ -34,7 +38,7 @@
   height: 310px;
   width: 500px;
   text-align: center;
-  padding: 5px;
+  padding: 6px;
 }
 
 .container {
@@ -54,6 +58,8 @@
 .card {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  text-align:center;
 }
 
 .header img {

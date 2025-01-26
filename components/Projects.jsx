@@ -31,9 +31,9 @@ export default function Projects() {
                 <div className="mb-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
                     {repos.map((repo) => (
                         <div className="transition transform hover:scale-105 hover:shadow-2xl projects-container flex justify-between h-full" key={repo.id}>
-                            <div className=" card bg-gray-800 text-gray-200 p-2 rounded shadow-lg">
+                            <div className="card bg-gray-800 text-gray-200 p-2 rounded shadow-lg">
                                 <h3 className="flex-1 text-lg font-bold mb-2">{repo.name}</h3>
-                                <p className="flex-1 text-sm mb-4">
+                                <p className="flex-1 mb-4">
                                     {repo.description || "No description available"}
                                 </p>
                                 <div className="flex-1 flex gap-2 justify-center">
