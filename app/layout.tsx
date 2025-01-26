@@ -13,6 +13,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://victor-onose.com'),
   title: "Victor Onose - Portfolio",
   description: "Victor Onose's Developer Portfolio",
 };
