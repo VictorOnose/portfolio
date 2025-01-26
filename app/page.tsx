@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link"
 import Projects from "@/components/Projects";
 import './globals.css';
-import RootLayout from "@/app/layout";
 import {
   Tooltip,
   TooltipContent,
