@@ -60,7 +60,7 @@ Image {
 }
 .name {
   margin: auto;
-  color: bg-zinc-950;
+  color: bg-gray-600;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   //padding: 50px;

@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link"
 import Projects from "@/components/Projects";
 import './globals.css';
+import { Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import {
   Tooltip,
   TooltipContent,
@@ -19,7 +21,15 @@ export default function Home() {
         <div className="name">
           <h1 className="text-4xl font-bold text-center">Onose Victor</h1>
           <h2 className="text-lg text-center mt-2">Web Developer | Second-year student</h2>
-          <main className="grid grid-cols-1 p-8 gap-8">
+          <div className="flex justify-center items-center">
+            <div className="flex items-center space-x-2">
+              <Phone className="h-5 w-5 text-gray-600" />
+              <span>+40757648685</span>
+              <Mail className="h-5 w-5 text-gray-600" />
+              <span>victoronose@gmail.com</span>
+            </div>
+          </div>
+          <main className="grid grid-cols-1 p-4 gap-8">
             Currently a second year student at the Faculty of Electrical Engineering and Computer Science (IESC) with
             intermediate knowledge in C++ and JavaScript. I am taking a course about JavaScript & CSS. I consider myself
             charismatic, disciplined and ambitious. At my job at Logiscool, I taught myself how to be more patient. I am
@@ -35,21 +45,21 @@ export default function Home() {
               <hr className="w-full border-gray-400" />
               <div className="pt-2 flex space-x-4">
 
-                <Button className="transition transform hover:scale-105 hover:shadow-2xl social bg-transparent" variant="outline">
+                <Button className="transition transform social bg-transparent" variant="outline">
                   <Link href='https://www.linkedin.com/in/victor-onose-051b0a2a9/'>
                     <Image
-                      src="/images/linkedin2.png"
+                      src="/images/linkedin.png"
                       alt="github"
-                      width={70}
-                      height={70}
-                      className="rounded" /></Link>
+                      width={65}
+                      height={65}
+                      className="rounded brightness-0 invert" /></Link>
                 </Button>
-                <Button className="transition transform hover:scale-105 hover:shadow-2xl social bg-transparent" variant="outline">
+                <Button className="transition transform social bg-transparent" variant="outline">
                   <Link href='https://github.com/VictorOnose'>
                     <Image
                       src="/images/github.png"
                       objectFit="contain"
-                      className="bg-transparent"
+                      className="bg-transparent brightness-0 invert"
                       width={70} height={70}
                       alt="github" /></Link>
                 </Button>
@@ -68,7 +78,7 @@ export default function Home() {
                       <img
                         src="/images/next.png"
                         alt="next"
-                        className="techstack" />
+                        className="techstack brightness-0 invert" />
                     </TooltipTrigger>
                     <TooltipContent>
                       <p>NEXT.JS</p>
@@ -81,7 +91,7 @@ export default function Home() {
                       <img
                         src="/images/css.png"
                         alt="css"
-                        className="techstack" />
+                        className="techstack brightness-0 invert" />
                     </TooltipTrigger>
                     <TooltipContent>
                       <p>CSS</p>
@@ -94,7 +104,8 @@ export default function Home() {
                       <img
                         src="/images/html.png"
                         alt="html"
-                        className="techstack" />
+
+                        className="techstack brightness-0 invert" />
                     </TooltipTrigger>
                     <TooltipContent>
                       <p>HTML</p>
@@ -108,7 +119,7 @@ export default function Home() {
                       <img
                         src="/images/react.png"
                         alt="react"
-                        className="techstack" />
+                        className="techstack brightness-0 invert" />
                     </TooltipTrigger>
                     <TooltipContent>
                       <p>React</p>
@@ -121,7 +132,7 @@ export default function Home() {
                       <img
                         src="/images/cplus.png"
                         alt="cplus"
-                        className="cplus" />
+                        className="cplus brightness-0 invert" />
                     </TooltipTrigger>
                     <TooltipContent>
                       <p>C++</p>
