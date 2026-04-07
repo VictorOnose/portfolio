@@ -30,10 +30,10 @@ export default function Home() {
             </div>
           </div>
           <main className="grid grid-cols-1 p-4 gap-8">
-            Currently a second year student at the Faculty of Electrical Engineering and Computer Science (IESC) with
-            intermediate knowledge in C++ and JavaScript. I am taking a course about JavaScript & CSS. I consider myself
-            charismatic, disciplined and ambitious. At my job at Logiscool, I taught myself how to be more patient. I am
-            interested in software engineering roles or internships.
+            Currently a third year student at the Faculty of Electrical Engineering and Computer Science (IESC) with
+            intermediate knowledge in C++, C# and JavaScript. I consider myself charismatic, disciplined and ambitious. 
+            I am an intern at Siemens as a Software Engineer. At the same time, I am working at Logiscool as a Lead Trainer and Trainer in teaching kids programming. 
+            At my job at Logiscool, I taught myself how to be more patient. 
           </main>
 
 
