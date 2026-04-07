@@ -20,7 +20,7 @@ export default function Home() {
       <div className="pt-5 text-gray-300 bg-gray-900 min-h-screen ">
         <div className="name">
           <h1 className="text-4xl font-bold text-center">Onose Victor</h1>
-          <h2 className="text-lg text-center mt-2">Web Developer | Second-year student</h2>
+          <h2 className="text-lg text-center mt-2">Software Engineer | Third year Student</h2>
           <div className="flex justify-center items-center">
             <div className="flex items-center space-x-2">
               <Phone className="h-5 w-5 text-gray-600" />
@@ -32,8 +32,8 @@ export default function Home() {
           <main className="grid grid-cols-1 p-4 gap-8">
             Currently a third year student at the Faculty of Electrical Engineering and Computer Science (IESC) with
             intermediate knowledge in C++, C# and JavaScript. I consider myself charismatic, disciplined and ambitious. 
-            I am an intern at Siemens as a Software Engineer. At the same time, I am working at Logiscool as a Lead Trainer and Trainer in teaching kids programming. 
-            At my job at Logiscool, I taught myself how to be more patient. 
+            I am an intern at Siemens Industry Software in Brasov as a Software Engineer. 
+            Also, I am working at Logiscool as a Lead Trainer and Trainer in teaching kids programming.
           </main>
 
 
