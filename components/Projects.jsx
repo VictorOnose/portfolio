@@ -11,7 +11,9 @@ export default function Projects() {
                 const response = await fetch("https://api.github.com/users/VictorOnose/repos");
                 if (response.ok) {
                     const result = await response.json();
-                    const starredRepos = result.filter((repo) => featured.includes(repo.name));
+                    const starredRepos = result
+			.filter((repo) => !repo.fork)
+			.sort((a, b) => b.stargazers_count - a.stargazers_count);
                     setRepos(starredRepos);
                 } else {
                     console.error("Failed to fetch repositories:", response.statusText);
